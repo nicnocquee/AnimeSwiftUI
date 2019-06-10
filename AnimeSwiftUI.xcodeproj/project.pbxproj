@@ -10,6 +10,7 @@
 		033794E422AEC74D00AFBFE2 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033794E322AEC74D00AFBFE2 /* NetworkFetcher.swift */; };
 		0340409A22AEDAC800CA4C91 /* DecodableRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340409922AEDAC800CA4C91 /* DecodableRoot.swift */; };
 		0340409C22AF124000CA4C91 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340409B22AF124000CA4C91 /* ErrorView.swift */; };
+		0340409E22AF1F8B00CA4C91 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0340409D22AF1F8A00CA4C91 /* README.md */; };
 		03C02F0C22AE933200C761D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C02F0B22AE933200C761D3 /* AppDelegate.swift */; };
 		03C02F0E22AE933200C761D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C02F0D22AE933200C761D3 /* SceneDelegate.swift */; };
 		03C02F1022AE933200C761D3 /* AnimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C02F0F22AE933200C761D3 /* AnimeList.swift */; };
@@ -45,6 +46,7 @@
 		033794E322AEC74D00AFBFE2 /* NetworkFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetcher.swift; sourceTree = "<group>"; };
 		0340409922AEDAC800CA4C91 /* DecodableRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableRoot.swift; sourceTree = "<group>"; };
 		0340409B22AF124000CA4C91 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		0340409D22AF1F8A00CA4C91 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		03C02F0822AE933200C761D3 /* AnimeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C02F0B22AE933200C761D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C02F0D22AE933200C761D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		03C02EFF22AE933200C761D3 = {
 			isa = PBXGroup;
 			children = (
+				0340409D22AF1F8A00CA4C91 /* README.md */,
 				03C02F0A22AE933200C761D3 /* AnimeSwiftUI */,
 				03C02F2122AE933400C761D3 /* AnimeSwiftUITests */,
 				03C02F2C22AE933400C761D3 /* AnimeSwiftUIUITests */,
@@ -279,6 +282,7 @@
 			files = (
 				03C02F1822AE933400C761D3 /* LaunchScreen.storyboard in Resources */,
 				03C02F1522AE933400C761D3 /* Preview Assets.xcassets in Resources */,
+				0340409E22AF1F8B00CA4C91 /* README.md in Resources */,
 				03C02F4422AEB68400C761D3 /* animeDataSample.json in Resources */,
 				03C02F1222AE933400C761D3 /* Assets.xcassets in Resources */,
 			);

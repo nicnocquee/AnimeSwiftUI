@@ -8,3 +8,7 @@ This is an experimental project to play with SwiftUI. It's a single page app whi
 - reload button to reload the request
 - shows "Loading ..." text when the API is being called
 - shows error message when the request fails
+
+## Preview
+
+Check out the video on [twitter](https://twitter.com/2co_p/status/1138224493736943617?s=12)

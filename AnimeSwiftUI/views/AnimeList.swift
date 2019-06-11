@@ -33,7 +33,13 @@ struct AnimeList : View {
                     })
                 }
             }
-            .navigationBarItems(trailing: Button(action : { self.networkFetcher?.fetch() } ) { Text("Reload") })
+            .navigationBarItems(trailing:
+                Button(action : {
+                    self.networkFetcher?.fetch()
+                }) {
+                    Text("Reload")
+                }.disabled(self.isLoading)
+            )
             .navigationBarTitle(Text("Top Anime"))
         }
         .onAppear {

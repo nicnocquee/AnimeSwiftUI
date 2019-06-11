@@ -25,16 +25,19 @@ struct JSONNetworkFetcher<T: Codable> {
     
     func fetch() {
         let theURL = URL(string: self.url)
-        self.isLoading = true
+        
+        DispatchQueue.main.async {
+            self.isLoading = true
+        }
         
         let sessionConfig = URLSessionConfiguration.default
-        //sessionConfig.timeoutIntervalForResource = 5 // set timeout 5 secods to test the error
+        sessionConfig.timeoutIntervalForResource = 5 // set timeout 5 secods to test the error
         let session = URLSession(configuration: sessionConfig)
         
         session.dataTask(with: theURL!) { (data, response, error) in
             DispatchQueue.main.async {
-                self.isLoading = false
                 self.error = error
+                self.isLoading = false
                 
                 guard let dat = data else {
                     self.error = DataError.emptyData

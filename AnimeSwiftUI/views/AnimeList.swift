@@ -13,7 +13,7 @@ struct AnimeList : View {
     @State var isLoading: Bool = false
     @State var error: Error? = nil
 
-    @State var networkFetcher: NetworkFetcher<[Anime]>?
+    @State var networkFetcher: JSONNetworkFetcher<[Anime]>?
     
     var body: some View {
         NavigationView {
@@ -38,7 +38,7 @@ struct AnimeList : View {
         }
         .onAppear {
             if self.networkFetcher == nil {
-                self.networkFetcher = NetworkFetcher(
+                self.networkFetcher = JSONNetworkFetcher(
                     url: "https://api.jikan.moe/v3/top/anime/1/upcoming",
                     rootKey: "top",
                     isLoading: self.$isLoading,

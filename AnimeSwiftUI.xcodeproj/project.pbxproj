@@ -23,6 +23,7 @@
 		03C02F4022AEB46B00C761D3 /* AnimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C02F3F22AEB46B00C761D3 /* AnimeRow.swift */; };
 		03C02F4222AEB61E00C761D3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C02F4122AEB61E00C761D3 /* Data.swift */; };
 		03C02F4422AEB68400C761D3 /* animeDataSample.json in Resources */ = {isa = PBXBuildFile; fileRef = 03C02F4322AEB68400C761D3 /* animeDataSample.json */; };
+		03D280E222AFE55000D80038 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D280E122AFE55000D80038 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		03C02F3F22AEB46B00C761D3 /* AnimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeRow.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		03C02F4122AEB61E00C761D3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		03C02F4322AEB68400C761D3 /* animeDataSample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = animeDataSample.json; sourceTree = "<group>"; };
+		03D280E122AFE55000D80038 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				03C02F3F22AEB46B00C761D3 /* AnimeRow.swift */,
 				03C02F0F22AE933200C761D3 /* AnimeList.swift */,
 				0340409B22AF124000CA4C91 /* ErrorView.swift */,
+				03D280E122AFE55000D80038 /* RemoteImage.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				03C02F3D22AE93AB00C761D3 /* Anime.swift in Sources */,
 				03C02F4222AEB61E00C761D3 /* Data.swift in Sources */,
 				033794E422AEC74D00AFBFE2 /* NetworkFetcher.swift in Sources */,
+				03D280E222AFE55000D80038 /* RemoteImage.swift in Sources */,
 				03C02F0C22AE933200C761D3 /* AppDelegate.swift in Sources */,
 				03C02F4022AEB46B00C761D3 /* AnimeRow.swift in Sources */,
 				0340409A22AEDAC800CA4C91 /* DecodableRoot.swift in Sources */,

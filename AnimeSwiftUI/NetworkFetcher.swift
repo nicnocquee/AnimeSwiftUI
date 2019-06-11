@@ -14,7 +14,7 @@ enum DataError: Error {
     case emptyData
 }
 
-struct NetworkFetcher<T: Codable> {
+struct JSONNetworkFetcher<T: Codable> {
     
     var url: String = ""
     var rootKey: String = ""
@@ -28,29 +28,29 @@ struct NetworkFetcher<T: Codable> {
         self.isLoading = true
         
         let sessionConfig = URLSessionConfiguration.default
-        sessionConfig.timeoutIntervalForResource = 5 // set timeout 5 secods to test the error
+        //sessionConfig.timeoutIntervalForResource = 5 // set timeout 5 secods to test the error
         let session = URLSession(configuration: sessionConfig)
         
         session.dataTask(with: theURL!) { (data, response, error) in
             DispatchQueue.main.async {
                 self.isLoading = false
                 self.error = error
+                
+                guard let dat = data else {
+                    self.error = DataError.emptyData
+                    return
+                }
+                
+                do {
+                    let decoder = JSONDecoder()
+                    let decoded = try decoder.decode(T.self, from: dat, keyedBy: self.rootKey)
+                    self.responseData = decoded
+                } catch let decodingError {
+                    self.error = decodingError
+                }
             }
 
-            guard let dat = data else {
-                self.error = DataError.emptyData
-                return
-            }
             
-            do {
-                let decoder = JSONDecoder()
-                let decoded = try decoder.decode(T.self, from: dat, keyedBy: self.rootKey)
-                DispatchQueue.main.async {
-                    self.responseData = decoded
-                }
-            } catch let decodingError {
-                self.error = decodingError
-            }
         }.resume()
     }
 }

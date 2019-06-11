@@ -12,9 +12,12 @@ struct AnimeRow: View {
     var anime: Anime
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(anime.title).font(.headline).lineLimit(nil)
-            Text(anime.type.rawValue).font(.subheadline)
+        HStack {
+            RemoteImage(imageURL: anime.image_url)
+            VStack(alignment: .leading) {
+                Text(anime.title).font(.headline).lineLimit(nil)
+                Text(anime.type.rawValue).font(.subheadline)
+            }
         }
     }
 }

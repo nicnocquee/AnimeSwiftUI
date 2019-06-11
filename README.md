@@ -11,4 +11,4 @@ This is an experimental project to play with SwiftUI. It's a single page app whi
 
 ## Preview
 
-Check out the video on [twitter](https://twitter.com/2co_p/status/1138224493736943617?s=12)
+Check out the video on [twitter](https://twitter.com/2co_p/status/1138459422039191557)

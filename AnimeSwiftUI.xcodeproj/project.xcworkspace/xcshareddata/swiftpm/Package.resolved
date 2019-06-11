@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RemoteImage",
+        "repositoryURL": "git@github.com:nicnocquee/RemoteImage.git",
+        "state": {
+          "branch": null,
+          "revision": "33965ed0df85839c00df5c7fcfa6831d50999b97",
+          "version": "0.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
